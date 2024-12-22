@@ -1,0 +1,230 @@
+/* assets/css/lessons.css */
+.breadcrumb {
+    margin: 20px 0;
+    color: #666;
+}
+
+.breadcrumb a {
+    color: #1a365d;
+    text-decoration: none;
+}
+
+.level-header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.level-description {
+    color: #666;
+    margin: 10px 0;
+}
+
+.lessons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.lesson-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+}
+
+.lesson-status {
+    margin-right: 15px;
+}
+
+.status-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.completed .status-icon {
+    background: #48bb78;
+    color: white;
+}
+
+.locked .status-icon {
+    background: #cbd5e0;
+}
+
+.lesson-content {
+    flex: 1;
+}
+
+.lesson-meta {
+    display: flex;
+    gap: 15px;
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.lesson-btn {
+    padding: 8px 16px;
+    background: #1a365d;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-left: 15px;
+}
+
+.lesson-btn.disabled {
+    background: #cbd5e0;
+    cursor: not-allowed;
+}
+
+/* assets/css/tests.css */
+.test-overview {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.overview-item {
+    text-align: center;
+}
+
+.overview-label {
+    display: block;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.overview-value {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #1a365d;
+}
+
+.tests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.test-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.test-header {
+    background: #1a365d;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.test-score {
+    background: #48bb78;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.test-content {
+    padding: 20px;
+}
+
+.test-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.test-btn {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background: #1a365d;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+/* assets/css/conversations.css */
+.conversations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.conversation-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.conversation-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.conversation-content {
+    padding: 20px;
+}
+
+.conversation-meta {
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    margin: 10px 0;
+}
+
+.conversation-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.practice-btn, .preview-btn {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.practice-btn {
+    background: #1a365d;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.preview-btn {
+    background: #e2e8f0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background: white;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8
+}

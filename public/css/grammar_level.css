@@ -1,0 +1,146 @@
+  /* Các style cho trang học từ vựng */
+  body {
+    background-color: #ecf0f1;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.vocabulary-container {
+    display: flex;
+    gap: 2rem;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.word-list {
+    flex: 2;
+}
+
+.word-card {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.word-card:hover {
+    transform: translateY(-5px);
+}
+
+.word-info {
+    margin-bottom: 15px;
+}
+
+.word {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.pronunciation {
+    color: #7f8c8d;
+    margin-left: 10px;
+    font-style: italic;
+}
+
+.meaning {
+    font-size: 20px;
+    color: #e74c3c;
+    margin: 10px 0;
+}
+
+.word-type {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #3498db;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.examples {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.example {
+    margin-bottom: 10px;
+}
+
+.english {
+    color: #2980b9;
+    font-weight: bold;
+}
+
+.vietnamese {
+    color: #27ae60;
+    font-style: italic;
+}
+
+.mark-learned {
+    background-color: #2ecc71;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.mark-learned:hover {
+    background-color: #27ae60;
+}
+
+.notification {
+    display: none;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #2ecc71;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Style cho nút quay lại trang chủ */
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.back-button-style {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button-style:hover {
+    background-color: #2980b9;
+}
+/* Nút hoàn thành */
+.complete-button {
+background-color: #e74c3c;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+transition: background-color 0.3s ease;
+margin-top: 20px;
+}
+
+.complete-button:hover {
+background-color: #c0392b;
+}

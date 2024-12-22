@@ -1,0 +1,141 @@
+/* assets/css/style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #1a365d;
+    padding: 1rem 0;
+    color: white;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid white;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #1a365d;
+}
+
+/* Main Content */
+.main-content {
+    padding: 2rem 0;
+}
+
+.course-section {
+    margin-bottom: 3rem;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.section-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.section-header h2 {
+    color: #1a365d;
+    font-size: 1.5rem;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.course-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    padding: 1rem;
+    text-align: center;
+}
+
+.card-header h3 {
+    margin-bottom: 0.5rem;
+}
+
+.lesson-count {
+    color: #e53e3e;
+    font-weight: bold;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.start-btn {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #1a365d;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.start-btn:hover {
+    background-color: #2d4a7c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .course-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .course-grid {
+        grid-template-columns: 1fr;
+    }
+}

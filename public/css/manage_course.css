@@ -1,0 +1,309 @@
+    /* Modal Styles */
+    .modal {
+        display: none;
+        /* Ẩn modal mặc định */
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .modal-content {
+        background-color: #fff;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+
+    .close {
+        color: #aaa;
+        font-size: 28px;
+        font-weight: bold;
+        position: absolute;
+        top: 10px;
+        right: 25px;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* Các kiểu chung cho danh sách khóa học */
+    .recent-products {
+        margin: 20px;
+    }
+
+    .recent-products h2 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .product-list {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .product-item {
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .product-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Nội dung khóa học */
+    .product-item div {
+        margin-bottom: 15px;
+    }
+
+    .product-item h3 {
+        font-size: 20px;
+        font-weight: 600;
+        color: #2c3e50;
+    }
+
+    .product-item p {
+        font-size: 16px;
+        color: #7f8c8d;
+    }
+
+    /* Các hành động (Form chỉnh sửa, Delete) */
+    .product-actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .product-actions form {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .product-actions input {
+        padding: 8px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 150px;
+    }
+
+    .product-actions button {
+        padding: 8px 15px;
+        font-size: 14px;
+        background-color: #27ae60;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .product-actions button:hover {
+        background-color: #2ecc71;
+    }
+
+    .product-actions a {
+        font-size: 14px;
+        color: #e74c3c;
+        text-decoration: none;
+        padding: 8px 15px;
+        border-radius: 5px;
+        border: 1px solid #e74c3c;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .product-actions a:hover {
+        background-color: #e74c3c;
+        color: white;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .product-actions form {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .product-actions button,
+        .product-actions a {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .product-actions input {
+            width: 100%;
+        }
+    }
+    .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 25px;
+    border-radius: 8px;
+    width: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: modalFadeIn 0.3s ease;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #000;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.save-btn,
+.cancel-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.save-btn {
+    background-color: #27ae60;
+    color: white;
+}
+
+.save-btn:hover {
+    background-color: #219a52;
+}
+
+.cancel-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.cancel-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Sửa lại nút Edit trong danh sách */
+.edit-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover {
+    background-color: #2980b9;
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+        margin: 20% auto;
+    }
+}
+/* Ví dụ CSS cho Modal */
+.modal-content textarea, .modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.save-btn, .cancel-btn {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.cancel-btn {
+    background-color: #f44336;
+}
+
+.save-btn:hover, .cancel-btn:hover {
+    opacity: 0.8;
+}
